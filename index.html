@@ -2,28 +2,47 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Oficial | Diccionario Colombiano</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 20px; color: #333; }
-        .producto-card { border: 1px solid #ddd; padding: 20px; border-radius: 8px; max-width: 400px; box-shadow: 2px 2px 10px #eee; }
-        .precio { color: #B12704; font-size: 1.5em; font-weight: bold; }
-        .disponible { color: #008a00; font-weight: bold; }
-        .btn-compra { background-color: #FF9900; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; width: 100%; margin-top: 10px; }
+        body { font-family: 'Segoe UI', Tahoma, sans-serif; background-color: #f4f4f4; margin: 0; padding: 20px; }
+        .container { max-width: 600px; margin: auto; background: white; padding: 25px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+        h1 { color: #232f3e; }
+        .precio { color: #B12704; font-size: 24px; font-weight: bold; }
+        .btn-compra { background-color: #FF9900; color: white; border: none; padding: 15px; width: 100%; font-size: 18px; border-radius: 5px; cursor: pointer; margin: 20px 0; }
+        .form-envio { margin-top: 20px; padding: 15px; background: #fafafa; border: 1px solid #ddd; }
+        input { padding: 8px; width: 90%; margin-top: 5px; }
+        .placeholder-img { background: #ccc; height: 200px; width: 100%; display: flex; align-items: center; justify-content: center; color: white; margin-bottom: 20px; }
     </style>
 </head>
 <body>
 
-    <div class="producto-card">
-        <h2>Diccionario Español Colombiano (Edición Escolar)</h2>
-        <p>Aprende jerga, modismos y cultura colombiana con esta guía definitiva.</p>
-        
-        <div class="precio">$ 35.000 COP</div>
-        <p class="disponible">✓ Disponible en stock</p>
-        
-        <p><strong>Tiempo de entrega:</strong> 3-5 días hábiles</p>
-        <p><strong>Envío:</strong> Gratis a todo el país</p>
-        
-        <button class="btn-compra">Añadir al carrito</button>
+<div class="container">
+    <div class="placeholder-img">Imagen del Diccionario (Tu foto aquí)</div>
+    
+    <h1>Diccionario Español Colombiano: Edición Premium</h1>
+    <p>La guía definitiva para entender toda la jerga colombiana, desde el "Parcero" hasta el "Chévere".</p>
+    
+    <div class="precio">$ 35.000 COP</div>
+    <p style="color: green;">✓ En stock y listo para enviar</p>
+    
+    <button class="btn-compra">Agregar al carrito</button>
+
+    <div class="form-envio">
+        <h3>Calcula tu envío</h3>
+        <label>Código Postal:</label><br>
+        <input type="text" placeholder="Ej: 110111">
+        <button style="margin-top:10px;">Calcular</button>
     </div>
+
+    <hr>
+    <h3>Detalles del producto</h3>
+    <ul>
+        <li>Idioma: Español</li>
+        <li>Páginas: 150</li>
+        <li>Entrega estimada: 3-5 días hábiles</li>
+    </ul>
+</div>
 
 </body>
 </html>
