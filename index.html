@@ -5,43 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tienda Oficial | Diccionario Colombiano</title>
     <style>
-        body { font-family: 'Segoe UI', Tahoma, sans-serif; background-color: #f4f4f4; margin: 0; padding: 20px; }
+        body { font-family: 'Segoe UI', Tahoma, sans-serif; background-color: #f4f4f4; margin: 0; padding: 20px; color: #333; }
         .container { max-width: 600px; margin: auto; background: white; padding: 25px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
-        h1 { color: #232f3e; }
-        .precio { color: #B12704; font-size: 24px; font-weight: bold; }
-        .btn-compra { background-color: #FF9900; color: white; border: none; padding: 15px; width: 100%; font-size: 18px; border-radius: 5px; cursor: pointer; margin: 20px 0; }
-        .form-envio { margin-top: 20px; padding: 15px; background: #fafafa; border: 1px solid #ddd; }
-        input { padding: 8px; width: 90%; margin-top: 5px; }
-        .placeholder-img { background: #ccc; height: 200px; width: 100%; display: flex; align-items: center; justify-content: center; color: white; margin-bottom: 20px; }
+        
+        /* Estilo profesional para la imagen del libro */
+        .portada-contenedor {
+            text-align: center;
+            margin: 20px auto;
+            max-width: 250px;
+        }
+        .portada-contenedor img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+        }
+
+        h1 { color: #232f3e; text-align: center; }
+        .precio { color: #B12704; font-size: 28px; font-weight: bold; text-align: center; margin: 15px 0; }
+        .btn-compra { background-color: #FF9900; color: white; border: none; padding: 15px; width: 100%; font-size: 18px; border-radius: 5px; cursor: pointer; font-weight: bold; }
+        .form-envio { margin-top: 30px; padding: 15px; background: #fafafa; border: 1px solid #ddd; border-radius: 5px; }
+        input { padding: 10px; width: 85%; margin-top: 10px; border: 1px solid #ccc; border-radius: 4px; }
     </style>
 </head>
 <body>
 
 <div class="container">
-    <div class="placeholder-img">Imagen del Diccionario (Tu foto aquí)</div>
+    <div class="portada-contenedor">
+        <img src="IMG_2542.jpeg" alt="Diccionario Español Colombiano">
+    </div>
     
     <h1>Diccionario Español Colombiano: Edición Premium</h1>
-    <p>La guía definitiva para entender toda la jerga colombiana, desde el "Parcero" hasta el "Chévere".</p>
+    <p style="text-align: center;">La guía definitiva para entender toda la jerga colombiana, desde el "Parcero" hasta el "Chévere".</p>
     
     <div class="precio">$ 35.000 COP</div>
-    <p style="color: green;">✓ En stock y listo para enviar</p>
+    <p style="color: green; text-align: center;">✓ En stock y listo para enviar</p>
     
-    <button class="btn-compra">Agregar al carrito</button>
+    <button class="btn-compra" onclick="alert('¡Producto añadido al carrito correctamente!')">Agregar al carrito</button>
 
     <div class="form-envio">
         <h3>Calcula tu envío</h3>
         <label>Código Postal:</label><br>
-        <input type="text" placeholder="Ej: 110111">
-        <button style="margin-top:10px;">Calcular</button>
+        <input type="number" placeholder="Ej: 110111">
+        <button style="margin-top:10px; padding: 10px;">Calcular</button>
     </div>
-
-    <hr>
-    <h3>Detalles del producto</h3>
-    <ul>
-        <li>Idioma: Español</li>
-        <li>Páginas: 150</li>
-        <li>Entrega estimada: 3-5 días hábiles</li>
-    </ul>
 </div>
 
 </body>
